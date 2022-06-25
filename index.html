@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Foto Gallery</title>
+    <link rel="shortcut icon" href="assets/icon/favicon.ico" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/font.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="body">
+    <header>
+        <div class="container header">
+            <div class="logo">
+                <a href="https://unsplash.com/" target="_blank"><i class="icon-unsplash"></i></a>
+                <span class="logo-header">Unsplash API</span>
+            </div>
+            <div class="search-form">
+                <input id="input" type="text" placeholder="Search...">
+                <button type="button"><i class="icon-search"></i></button>
+            </div>
+        </div>
+        <section class="info-panel">
+            <div class="target-info">
+                <span class="image-quantity"></span> <i class="icon-images"></i>
+                <span class="page-quantity"></span> <i class="icon-stack"></i>
+            </div>
+            <div class="pages-nav">
+                <button class="prev"><i class="icon-circle-left"></i></button>
+                Page  <span class="current-page"></span>
+                <button class="next"><i class="icon-circle-right"></i></button>
+            </div>
+        </section>
+    </header>
+
+    <main>
+        <div class="bg-wrapper">
+            <secction class="gallery container">
+            
+            </secction>
+        </div>
+    </main>
+    
+    <footer>
+        <div class="container footer">
+            <div class="footer-info">
+                <span>©</span>
+                <span>2022</span>
+                <a href="https://github.com/gettosun" class="footer-link" target="_blank"><i class="icon-github"></i></a>
+            </div>
+            <div class="footer-logo">
+                <a href="https://rs.school/js-stage0/" class="svg" target="_blank">
+                    <svg class="rss-logo">
+                        <use xlink:href="assets/svg/sprite.svg#rss"></use>
+                    </svg>
+                </a>
+            </div>
+        </div>
+    </footer>
+    <div class="popup">
+        <button class="prev-image"><i class="icon-circle-left"></i></button>
+        <button class="next-image"><i class="icon-circle-right"></i></button>
+    </div>
+    <div class="overlay"></div>
+    <script src="script.js"></script>
+</body>
+
+</html>

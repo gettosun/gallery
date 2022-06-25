@@ -1,0 +1,227 @@
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    font-family: 'Roboto', sans-serif;
+    box-sizing: border-box;
+    font-size: 20px;
+    color: #FFFFFF;
+    scroll-behavior: smooth;
+    transition: all .3s;
+    text-decoration: none;
+}
+header {
+    position: fixed;
+    height: 100px;
+    width: 100%;
+    border-bottom: 5px solid orange;
+    z-index: 2;
+    background: rgba(0,0,0,.9);
+}
+main {
+    padding-top: 100px;
+}
+input {
+    box-sizing: border-box;
+    width: 100%;
+    border: 1px solid rgba(0,0,0,.3);
+    outline: none;
+    border-radius: 35px;
+    padding: 0 15px;
+    color: black;
+}
+i {
+    color: orange;
+}
+a:hover {
+    color: orange;
+}
+button {
+    cursor: pointer;
+    background: none;
+    border: none;
+}
+.body_fixed {
+    height: 100vh;
+    overflow-y: hidden;
+}
+.gallery-link {
+    display: block;
+    width: 380px;
+    height: 214px;
+}
+.container {
+    max-width: 1280px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.header {
+    height: 50px;
+    justify-content: space-between;
+    padding: 0 30px;
+}
+.logo-header {
+    font-size: 30px;
+    font-weight: 700;
+}
+.search-form {
+    width: 350px;
+    height: 35px;
+    display: flex;
+    align-items: center;
+}
+.icon-unsplash {
+    font-size: 30px;
+    margin-right: 20px;
+}
+.icon-search {
+    position: absolute;
+    right: 11%;
+    top: 16%;
+    color: black;
+}
+.icon-images {
+    margin-right: 30px;
+    margin-left: 5px;
+}
+.icon-folder-open {
+    margin-left: 5px;
+}
+.icon-circle-left {
+    margin-right: 15px;
+}
+.icon-circle-right {
+    margin-left: 15px;
+}
+.info-panel {
+    height: 50px;
+    max-width: 1280px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 0 30px;
+    border-radius: 10px;
+    background: rgba(250,250,250,.1);
+}
+.bg-wrapper {
+    min-height: 100vh;
+    background: rgba(0,0,0,.9);
+}
+.gallery {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    background: rgba(250,250,250,.1);
+}
+.gallery-item {
+    width: 380px;
+    height: 214px;
+    margin: 15px 10px 0 10px;
+    background-position: center;
+    background-size: cover;
+    border-radius: 2px;
+    cursor: pointer;
+    box-shadow: 0 0 5px 2px rgba(250,250,250,.1);
+}
+.gallery-item:hover {
+    box-shadow: 0 0 10px 5px rgba(250,250,250,.2);
+    transform: scale(1.1) translate(-5px, 5px);
+}
+.close {
+    display: none;
+}
+.download{
+    position: absolute;
+    width: 760px;
+    height: 428px;
+    z-index: 3;
+    cursor: auto;
+}
+.open {
+    display: block;
+}
+.bg-wrapper {
+    text-align: center;
+}
+footer {
+    height: 50px;
+    width: 100%;
+    background: rgba(0,0,0,.9);
+}
+.rss-logo {
+    height: 50px;
+    width: 140px;
+}
+.footer {
+    justify-content: space-between;
+    padding: 0 30px;
+}
+.icon-github {
+    color: #FFFFFF;
+    margin-left: 20px;
+    font-size: 40px;
+}
+.popup {
+    position: fixed;
+    width: 900px;
+    height: 500px;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 0; 
+    right: 0;
+    margin: 0 auto;
+    z-index: 3;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    display: none;
+}
+.popup_active {
+    display: flex;
+}
+.overlay {
+    position: absolute;
+    height: 3796px;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    /* background: rgba(41, 41, 41, 0.6); */
+    background-color: rgba(255, 255, 255, .1);
+    backdrop-filter: blur(5px);
+    display: none;
+    z-index: 2;
+    cursor: pointer;
+}
+.overlay_active {
+    display: block
+}
+
+.prev-image,
+.next-image {
+    color: black;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.prev-image {
+    left: -50px;
+}
+.next-image {
+    right: -50px;
+}
+
+.prev-image .icon-circle-left {
+    font-size: 50px;
+    margin-left: 0;
+    text-shadow: rgb(43, 43, 42) 1px 0 10px;
+}
+.next-image .icon-circle-right {
+    font-size: 50px;
+    margin-right: 0;
+    text-shadow: rgb(43, 43, 42) 1px 0 10px;
+}
